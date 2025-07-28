@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Mundo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Player de música flutuante -->
+        <div class="floating-player">
+            <span id="now-playing">Tocando: Nossa Música</span>
+            <div class="player-controls">
+                <button id="play-pause-btn"><i class="fas fa-pause"></i></button>
+                <button id="mute-btn"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+
+        <header>
+            <h1 id="main-title">Nosso Amor</h1>
+            <div class="heart" id="heart-icon">❤</div>
+        </header>
+
+        <nav class="menu">
+            <button class="menu-btn active" data-section="home">Home</button>
+            <button class="menu-btn" data-section="photos">Nossas Fotos</button>
+            <button class="menu-btn" data-section="memories">Memórias</button>
+
+        </nav>
+
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="welcome">
+                    <h2>Bem-vinda ao nosso mundo</h2>
+                    <p>Cada momento com você é especial. Este site é um presente para guardarmos nossas melhores lembranças.</p>
+                    <div class="love-quote">
+                        <p>"O amor não se vê com os olhos, mas com o coração."</p>
+                        <p>- William Shakespeare</p>
+                    </div>
+                    <div class="anniversary-counter">
+                        <h3>Estamos juntos há:</h3>
+                        <div id="counter"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photos Section -->
+            <section id="photos" class="content-section">
+                <h2>Nossos Momentos</h2>
+                <div class="gallery">
+                    <!-- Adicione suas fotos aqui -->
+                    <div class="gallery">
+                        <!-- Suas fotos existentes aqui -->
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.39_f1a80b5b.jpg"
+                                alt="Nossa foto 1" class="gallery-photo">
+                            <div class="photo-date">22/07/2023</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.40_e0bbc308.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">24/07/2023</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.43_5c11428e.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">20/08/2023</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.43_681cc2a5.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">02/09/2023</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.44_e51a9fd9.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">13/08/2023</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.46_56f5f755.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">18/11/2023</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.47_ec5c2a33.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">23/12/2023</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.49_51a9c23d.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">10/03/2024</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.49_a9d021f0.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">27/01/2024</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.50_449876d1.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">12/06/2024</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.50_6419831f.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">24/11/2024</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.50_d4b215e2.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">17/05/2025</div>
+                        </div>
+                        <div class="photo-container">
+                            <img src="fotos/Imagem do WhatsApp de 2025-07-28 à(s) 09.54.51_dc2573e0.jpg"
+                                alt="Nossa foto 2" class="gallery-photo">
+
+                            <div class="photo-date">18/05/2025</div>
+                    </div>
+                    <!-- Adicione mais fotos -->
+                </div>
+            </section>
+
+            <!-- Memories Section -->
+            <section id="memories" class="content-section">
+                <h2>Nossa História</h2>
+                <div class="memory-timeline">
+                    <div class="memory">
+                        <div class="memory-date">19/07/2023</div>
+                        <div class="memory-content">
+                            <h3>Nosso Primeiro Encontro</h3>
+                            <p>Lembro como se fosse hoje quando nos conhecemos, voce toda risonha e eu achando "ela é doidinha, gostei"...</p>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-date">24/07/2023</div>
+                        <div class="memory-content">
+                            <h3>Primeira Viagem Juntos</h3>
+                            <p>Foi incrível quando fomos para benfica comer açaí, lugar onde a pessoa me desafiou "essa moto não anda não?"...</p>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-date">26/07/2023</div>
+                        <div class="memory-content">
+                            <h3>Primeiro Aniversário Juntos</h3>
+                            <p>Seu primeiro aniversario juntos, o dia que te busquei e nos fomos no parque e nos divertimos muitao</p>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-date">28/07/2023</div>
+                        <div class="memory-content">
+                            <h3>O dia especial</h3>
+                            <p>Chegou o dia mega especial, o dia que fomos no show do Lucas Lucco aqui na cidade, e na volta, alguem me pediu em namoro kkkk</p>
+                            <p> Brincadeiras a parte, foi o dia mega especial, e que me deixa muito feliz por ter tomado a melhor decisao da minha vida!</p>
+                        </div>
+                    </div>    
+                    <div class="memory">
+                        <div class="memory-date">31/07/2023</div>
+                        <div class="memory-content">
+                            <h3>Meu Aniversário</h3>
+                            <p>A pessoa chegou aqui toda empolgada, conheceu minha familia e pra melhorar, teve contato com as borboletas e comecou a conversar com elas...</p>
+                            <p>Desceu até o chao na frente da minha mãe, falando que iria ir para o baile funk no RJ...</p>
+                        </div>
+                    </div>     
+                    <div class="memory">
+                        <div class="memory-date">♾️</div>
+                        <div class="memory-content">
+                            <h3>Todos momentos</h3>
+                            <p>Se eu ficar aqui falando sobre os momentos importantes e felizes, ficarei ate amanha... todos momentos sao mega especiais com voce e voce me deixa cada vez mais feliz, minha teteinha ❤️...</p>
+                        </div>
+                    </div>    
+                       
+                    
+                </div>
+            </section>
+
+            <!-- Messages Section -->
+            <section id="messages" class="content-section">
+                <h2>Mensagens para Você</h2>
+                <div class="message-container">
+                    <div class="message-card">
+                        <div class="message-header">
+                            <div class="message-date">Hoje</div>
+                            <div class="message-heart">❤</div>
+                        </div>
+                        <div class="message-text">
+                            <p>Você ilumina meus dias como ninguém mais consegue.</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="new-message-btn">+ Nova Mensagem</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Feito com ❤ especialmente para você</p>
+        </footer>
+    </div>
+
+    <!-- Modal para nova mensagem -->
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Escreva uma Nova Mensagem</h2>
+            <textarea id="new-message-text" placeholder="Digite sua mensagem de amor..."></textarea>
+            <button id="save-message-btn">Salvar Mensagem</button>
+        </div>
+    </div>
+
+    <!-- Áudio para a música de fundo -->
+    <audio id="background-music" loop>
+        <source src="musicas/Jorge & Mateus - Duas Metades - [DVD Ao Vivo em Jurerê] - (Clipe Oficial).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
