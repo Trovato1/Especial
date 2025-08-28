@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nowPlaying = document.getElementById('now-playing');
     
     // Data do relacionamento (atualize com sua data)
-    const startDate = new Date('2023-07-29');
+    const startDate = new Date('2023-07-30');
     
     // Configuração inicial da música
     backgroundMusic.volume = 0.5; // Volume inicial (50%)
