@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nowPlaying = document.getElementById('now-playing');
     
     // Data do relacionamento (atualize com sua data)
-    const startDate = new Date('2023-07-30');
+    const startDate = new Date('2023-07-28');
     
     // Configuração inicial da música
     backgroundMusic.volume = 0.5; // Volume inicial (50%)
@@ -159,4 +159,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializa o contador
     updateAnniversaryCounter();
     setInterval(updateAnniversaryCounter, 86400000); // Atualiza a cada dia
+
 });
