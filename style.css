@@ -34,26 +34,40 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     opacity: 0;
-    transform: translateY(50px); /* Inicialmente fora de vista */
-    animation: floatIn 0.8s forwards, pulseText 2s infinite; /* Adicionando animação de entrada e pulsação */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave */
+    transform: translateY(50px);
+    /* Inicialmente fora de vista */
+    animation: floatIn 0.8s forwards, pulseText 2s infinite;
+    /* Adicionando animação de entrada e pulsação */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Transição suave */
 }
 
 @keyframes floatIn {
     0% {
         opacity: 0;
-        transform: translateY(50px); /* Inicia fora da tela */
+        transform: translateY(50px);
+        /* Inicia fora da tela */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* Move para a posição final */
+        transform: translateY(0);
+        /* Move para a posição final */
     }
 }
 
 @keyframes pulseText {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 #now-playing {
@@ -81,7 +95,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease; /* Transição suave */
+    transition: all 0.3s ease;
+    /* Transição suave */
 }
 
 .player-controls button:hover {
@@ -92,12 +107,14 @@ body {
 
 /* Animação de foco ao clicar no botão */
 .player-controls button:active {
-    transform: scale(0.9); /* Efeito de "pressionar" */
+    transform: scale(0.9);
+    /* Efeito de "pressionar" */
 }
 
 /* Efeito de entrada suave */
 .floating-player.show {
-    animation: floatIn 1s forwards; /* Adiciona a animação */
+    animation: floatIn 1s forwards;
+    /* Adiciona a animação */
     opacity: 1;
     transform: translateY(0);
 }
@@ -139,9 +156,17 @@ header {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .menu {
@@ -184,9 +209,23 @@ header {
     display: block;
 }
 
+.photo-container img[src*="luninha1.jpg"] {
+    object-fit: contain !important;
+    /* Faz a imagem inteira caber no espaço */
+    background-color: #f5e6d3;
+    /* Cor de fundo suave para preencher bordas vazias */
+    padding: 5px;
+    /* Pequeno espaçamento interno */
+}
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .welcome {
@@ -480,23 +519,23 @@ footer {
     #main-title {
         font-size: 2.5rem;
     }
-    
+
     .menu {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .menu-btn {
         width: 80%;
     }
-    
+
     .gallery {
         grid-template-columns: 1fr;
     }
-    
+
     .modal-content {
         margin: 20% auto;
         width: 90%;
     }
-    
+
 }
